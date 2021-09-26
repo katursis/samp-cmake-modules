@@ -13,8 +13,6 @@ function(add_samp_plugin plugin_name)
 
   target_compile_features(${plugin_name} PRIVATE cxx_std_17)
 
-  target_include_directories(${plugin_name} PRIVATE lib)
-
   set_target_properties(${plugin_name} PROPERTIES PREFIX "")
 
   if(MSVC)
